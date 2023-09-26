@@ -208,3 +208,7 @@ export default function isMobilePhone(str, locale, options) {
 }
 
 export const locales = Object.keys(phones);
+
+export const getLocalPattern = function (local) {
+  return phones[local];
+};
